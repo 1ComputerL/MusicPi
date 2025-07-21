@@ -1,0 +1,9 @@
+The pico program uses the following function keys to relay button presses to the pi.
+F1=backward button
+F2=play button
+F4=forward button
+F6=mode button
+F7=display button
+F8=stop button
+F9=power button
+F12=bcd
