@@ -1,3 +1,4 @@
+# intended for use with Raspberry Pi Pico
 ### IMPORTS ###
 import time
 import board

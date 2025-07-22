@@ -1,3 +1,1 @@
-This is what is left from the OLED code I installed from Waveshare lol.
-It is all I need for my project. My code for the OLED will be found
-in the example folder.
+This is what is left of the OLED drivers downloaded from Waveshare. What remains is all that is needed by the other programs.

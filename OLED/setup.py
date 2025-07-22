@@ -7,4 +7,3 @@ setup(
     package_dir={'': 'lib'},
     packages=['waveshare_OLED'],
 )
-

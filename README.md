@@ -1,10 +1,10 @@
-# 🎵 MusicPi
+# MusicPi
 
 MusicPi is a modular, extensible, and hackable music/media system for Raspberry Pi, designed for physical controls, OLED display, and integration with custom hardware (like Pico microcontrollers). It’s perfect for building your own jukebox, media center, or interactive music player!
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Physical Controls:** Use buttons, rotary encoders, and potentiometers for playback, navigation, and volume/tone control.
 - **OLED Display:** Real-time menu, notifications, and playback info on a Waveshare OLED screen.
@@ -16,7 +16,7 @@ MusicPi is a modular, extensible, and hackable music/media system for Raspberry 
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 background.py           # Manages system state, power, and screen
@@ -32,9 +32,9 @@ Pico/                   # Microcontroller code and examples
 
 ---
 
-## 🛠️ Setup & Installation
+## Setup & Installation
 
-### 1. **Dependencies**
+### 1. Dependencies
 
 - Python 3.x
 - [MPV](https://mpv.io/) media player
@@ -51,13 +51,13 @@ sudo apt-get install python3-pip python3-pil python3-numpy mpv socat
 sudo pip3 install mutagen evdev gpiozero Pillow
 ```
 
-### 2. **Hardware Connections**
+### 2. Hardware Connections
 
 - **OLED Display:** Connect as per [OLED/readme_EN.txt](OLED/readme_EN.txt).
 - **Buttons/Potentiometers:** Wire to Pico as per [Pico/main.py](Pico/main.py).
 - **Serial Connection:** Pico to Pi via USB (for volume/tone).
 
-### 3. **Configuration**
+### 3. Configuration
 
 - Place your music in `/home/me/Music` (or edit paths in the code).
 - Edit device paths in the various programs if needed.
@@ -65,7 +65,7 @@ sudo pip3 install mutagen evdev gpiozero Pillow
 
 ---
 
-## 🏃 Running MusicPi
+## Running MusicPi
 
 1. **Start the background manager:**
    ```sh
@@ -83,7 +83,7 @@ sudo pip3 install mutagen evdev gpiozero Pillow
 
 ---
 
-## 🎛️ Controls
+## Controls
 
 See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
@@ -100,7 +100,7 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
 ---
 
-## 🖥️ OLED Display
+## OLED Display
 
 - Menus, notifications, and playback info are shown using [`OLED.py`](OLED.py).
 - Customizable via Pillow fonts and images.
@@ -108,7 +108,7 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
 ---
 
-## 🧩 Extending MusicPi
+## Extending MusicPi
 
 - Add new menu actions in [`generate_albums_json.py`](generate_albums_json.py).
 - Add new hardware controls by extending [`evdevlib.py`](evdevlib.py) or Pico code.
@@ -116,7 +116,7 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
 ---
 
-## 📝 Example: Adding a New Button
+## Example: Adding a New Button
 
 1. Wire the button to Pico and assign a GPIO pin.
 2. In [Pico/main.py](Pico/main.py), send a new keycode.
@@ -124,7 +124,7 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 - **No display:** Check OLED wiring and font paths.
 - **No sound:** Ensure MPV is installed and working.
@@ -133,7 +133,7 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
 ---
 
-## 📚 References
+## References
 
 - [Waveshare OLED Documentation](OLED/readme_EN.txt)
 - [MPV JSON IPC](https://mpv.io/manual/master/#json-ipc)
@@ -142,7 +142,7 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
 ---
 
-## 💡 Credits
+## Credits
 
 - ComputerL
 - Waveshare for OLED libraries
@@ -151,10 +151,10 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
 ---
 
-## 🦾 License
+## License
 
 MIT License for all custom code. See individual files for third-party licenses.
 
 ---
 
-## 🤘 Have fun hacking your music system!
+## Have fun hacking your music system!
