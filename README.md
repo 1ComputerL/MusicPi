@@ -9,7 +9,7 @@ MusicPi is a modular, extensible, and hackable music/media system for Raspberry 
 - **Physical Controls:** Use buttons, rotary encoders, and potentiometers for playback, navigation, and volume/tone control.
 - **OLED Display:** Real-time menu, notifications, and playback info on a Waveshare OLED screen.
 - **MPV Integration:** Robust playback via MPV, supporting local files and streams.
-- **Dynamic Menus:** Auto-generated menus from your music folder, including Play All, artist info, and folder navigation.
+- **Dynamic Menus:** Auto-generated menus from your music folder
 - **Pico Microcontroller Support:** CircuitPython/MicroPython code for sending keypresses and analog data to the Pi.
 - **Logging:** All actions and errors are logged for easy debugging.
 - **Modular Design:** Easy to extend with new controls, displays, or features.
@@ -124,15 +124,6 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
 ---
 
-## Troubleshooting
-
-- **No display:** Check OLED wiring and font paths.
-- **No sound:** Ensure MPV is installed and working.
-- **No key response:** Check device path in [`evdevlib.py`](evdevlib.py).
-- **Volume not changing:** Check serial connection and Pico code.
-
----
-
 ## References
 
 - [Waveshare OLED Documentation](OLED/readme_EN.txt)
@@ -154,7 +145,3 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 ## License
 
 MIT License for all custom code. See individual files for third-party licenses.
-
----
-
-## Have fun hacking your music system!

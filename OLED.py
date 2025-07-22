@@ -34,6 +34,20 @@ class OLED:
 # logging
         log.info("OLED: initialized;")
 
+# function to find the largest font size that fits the text within the display width
+    def fit_text(self, text, max_width, font_path, max_size, min_size=8):
+# loop from max_size down to min_size
+        for font_size in range(max_size, min_size - 1, -1):
+# create a font object with the current size
+            font = ImageFont.truetype(font_path, font_size)
+# measure the width of the text with this font
+            width, _ = ImageDraw.Draw(Image.new('1', (1, 1))).textsize(text, font=font)
+# if the text fits, return this font
+            if width <= max_width:
+                return font
+# if no font fits, return the smallest font
+        return ImageFont.truetype(font_path, min_size)
+    
     def notification (self, title, notification):
 # clear the display
         disp.clear()
