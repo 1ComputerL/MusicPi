@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import logging
+import json
 import re
 from mutagen.easyid3 import EasyID3
 from mutagen.id3 import ID3NoHeaderError
@@ -102,8 +103,10 @@ def build_folder_structure(path):
     return node
 
 if __name__ == "__main__":
-    # Set the root directory to ~/Music
-    root_dir = os.path.expanduser("~/Music")
+    # Set the root media directory
+    with open('mediaDir.json', 'r') as file:
+        data = json.load(file)
+    root_dir = data["mediaDir"]
     tree = build_folder_structure(root_dir)
 
     menus_file = os.path.join(parentdir, "menus.json")
