@@ -1,0 +1,4 @@
+2025-07-23 13:32:47,928 - menus.json not found at /home/me/MusicPi/menus.json. Creating a new one.
+2025-07-23 13:32:47,946 - Created new menus.json with structure from /home/me/Music.
+2025-07-23 13:32:49,158 - VolHandler: VolHandler started; initiated things;;
+2025-07-23 13:32:51,161 - VolHandler: connected to pico;
