@@ -1,16 +1,17 @@
 ### IMPORTS ###
 import time
+import os
 import sys
 from PIL import Image,ImageDraw,ImageFont
 import logging
-# path variables
-picdir = "/home/me/System/OLED/pic"
-libdir = "/home/me/System/OLED/lib"
+# get the parent directory of this file
+parentdir = os.path.dirname(os.path.abspath(__file__))# path variables
+picdir = parentdir+"/OLED/pic"
+libdir = parentdir+"/OLED/lib"
 # add OLED libary path to system path so that we can import it
 sys.path.append(libdir)
 # import the OLED library
 from waveshare_OLED import OLED_0in91
-
 ### VARIABLES ###
 # set up the OLED display
 disp = OLED_0in91.OLED_0in91()

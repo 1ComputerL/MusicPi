@@ -1,4 +1,9 @@
 import os
+import sys
+# get the parent directory of this file
+parentdir = os.path.dirname(os.path.abspath(__file__))
+# add the MusicPi directory to the system path
+sys.path.append(parentdir)
 import json
 import logging
 import re
@@ -7,7 +12,7 @@ from mutagen.id3 import ID3NoHeaderError
 
 # Logging setup
 log = logging.getLogger('generate_albums_json')
-logging.basicConfig(filename='/home/me/System/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename=parentdir+'/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 def get_artist_from_mp3(file_path):
     """
@@ -96,12 +101,12 @@ def build_folder_structure(path):
     return node
 
 if __name__ == "__main__":
-    # Set the root directory to /home/me/Music
-    root_dir = "/home/me/Music"
+    # Set the root directory to home/username/Music
+    root_dir = os.path.expanduser("~/Music")
     tree = build_folder_structure(root_dir)
 
     # Load the existing menus.json
-    menus_file = "/home/me/System/menus.json"
+    menus_file = parentdir+"/menus.json"
     try:
         with open(menus_file, "r", encoding='utf-8') as f:
             menus_data = json.load(f)
@@ -114,7 +119,7 @@ if __name__ == "__main__":
         with open(menus_file, "w", encoding='utf-8') as f:
             json.dump(menus_data, f, indent=4)
 
-        log.info("Successfully updated menus.json with the new structure from /home/me/Music.")
+        log.info(f"Successfully updated menus.json with the new structure from {root_dir}.")
 
     except FileNotFoundError:
         log.error(f"menus.json not found at {menus_file}. Please ensure the file exists.")

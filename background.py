@@ -1,7 +1,10 @@
 ### IMPORTS ###
 import sys
-# add the System directory to the system path
-sys.path.append('/home/me/System')
+import os
+# get the parent directory of this file
+parentdir = os.path.dirname(os.path.abspath(__file__))
+# add the MusicPi directory to the system path
+sys.path.append(parentdir)
 import subprocess
 import logging
 import evdevlib
@@ -16,7 +19,7 @@ time.sleep(3)
 # create new logger
 log = logging.getLogger('my_logger')
 # configure the logger
-logging.basicConfig(filename='/home/me/System/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename=parentdir+'/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 ### INITIATE THINGS ###
 # global variables to track state of power button
@@ -96,7 +99,7 @@ while True:
     if power_button_state == True and prev_power_button_state == False:
 # open system.py main program as subprocess
         systemprogram = subprocess.Popen(
-            ['/bin/python', '/home/me/System/music_system.py'],
+            ['/bin/python', parentdir+ '/music_system.py'],
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,

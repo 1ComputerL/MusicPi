@@ -1,7 +1,9 @@
 ### IMPORTS ###
 import sys
-# add the System directory to the system path
-sys.path.append('/home/me/System')
+# get the parent directory of this file
+parentdir = os.path.dirname(os.path.abspath(__file__))
+# add the MusicPi directory to the system path
+sys.path.append(parentdir)
 import os
 import subprocess
 import traceback
@@ -20,10 +22,10 @@ import random
 # create new logger
 log = logging.getLogger('my_logger')
 # configure the logger
-logging.basicConfig(filename='/home/me/System/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename=parentdir+'/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 log.info("got past logging setup")
 # update the menus.json file
-os.system("/bin/python /home/me/System/generate_albums_json.py")
+os.system("/bin/python " + parentdir + "/generate_albums_json.py")
 # delay
 time.sleep(.5)
 log.info("got past updating menus.jsonn")
@@ -36,7 +38,7 @@ log.info("got past music player setup")
 
 ### VARIABLES ###
 # open menus.json file for reading
-with open('/home/me/System/menus.json', 'r') as menus_json:
+with open(parentdir + '/menus.json', 'r') as menus_json:
 # load the json data into a variable
     menus = json.load(menus_json)
 # current menu location
@@ -288,7 +290,7 @@ signal.signal(signal.SIGTERM, handle_stop_signal)
 signal.signal(signal.SIGTSTP, handle_stop_signal)
 # start volume handling subprocess
 volumeprogram = subprocess.Popen(
-    ['/bin/python', '/home/me/System/handle_volume.py'],
+    ['/bin/python', parentdir+ '/handle_volume.py'],
     stdin=subprocess.PIPE,
     stdout=subprocess.PIPE,
     stderr=subprocess.PIPE,
@@ -374,27 +376,3 @@ while True:
 
 # delay
     time.sleep(.01)
-    
-"""
-# function that doesn't work
-
-# specify the output folder
-        output_folder = "/home/me/Music/04. Stream"
-# create hidden tkinter object to access clipboard
-        obj = tk.Tk()
-# hide the main window
-        obj.withdraw()
-# access the clipboard content
-        clipboard_content = obj.clipboard_get()
-# create a variable to hold the url from the clipboard
-        link=clipboard_content
-# create the filename variable
-        filename = "media"
-# create the filepath variable
-        filepath = os.path.join(output_folder, filename + ".m3u")
-# open the file for writing
-        with open(filepath, "w", encoding="utf-8") as f:
-# write the clipboard content (a url) to the file
-            f.write(clipboard_content)
-# function that doesn't work
-"""

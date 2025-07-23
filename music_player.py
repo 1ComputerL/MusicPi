@@ -1,8 +1,10 @@
 ### IMPORTS ###
 import sys
-# add the System directory to the system path
-sys.path.append('/home/me/System')
 import os
+# get the parent directory of this file
+parentdir = os.path.dirname(os.path.abspath(__file__))
+# add the MusicPi directory to the system path
+sys.path.append(parentdir)
 import subprocess
 import json
 import logging
@@ -12,7 +14,7 @@ import socket
 # create new logger
 log = logging.getLogger('my_logger')
 # configure the logger
-logging.basicConfig(filename='/home/me/System/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename=parentdir + '/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 ### MUSIC CLASS ###
 class Player:
