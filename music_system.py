@@ -1,3 +1,10 @@
+# This is the main part of the MusicPi system
+# It displays a media menu based on the folder detailed in the menus.json file
+# It displays everything on the OLED display using the OLED.py module
+# The menu can be navigated with different key presses taken from the input device (pico)
+# And media that is selected can be played with the music_player.py module
+# Also, it starts handle_volume.py to handle volume control
+
 ### IMPORTS ###
 import sys
 import os

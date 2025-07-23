@@ -1,10 +1,12 @@
+# This program connects to a Raspberry Pi Pico via serial port and receives volume control commands
+# The pico sends these volume control commands based on the position of a potetentiometer connected to it
+# The program could be edited to get volume control commands from other sources
+# It is run by music_system.py
+# Created by ComputerL
+
 ### IMPORTS ###
 import sys
 import os
-# get the parent directory of this file
-parentdir = os.path.dirname(os.path.abspath(__file__))
-# add the MusicPi directory to the system path
-sys.path.append(parentdir)
 import serial
 import time
 import json
@@ -12,6 +14,12 @@ import signal
 import time
 import signal
 import logging
+
+### PATH SETUP ###
+# get the parent directory of this file
+parentdir = os.path.dirname(os.path.abspath(__file__))
+# add the MusicPi directory to the system path
+sys.path.append(parentdir)
 
 ### LOGGING SETUP ###
 # create new logger
@@ -34,8 +42,15 @@ signal.signal(signal.SIGTSTP, handle_stop_signal)
 
 log.info("VolHandler: VolHandler started; initiated things;;")
 
+### CONNECT TO PICO ###
+# fetch the serial port that the pico is connected to
+with open('settings.json', 'r') as file:
+    data = json.load(file)
+
+picoPort = data["picoPort"]
+
 # open the serial port to connect to pico
-ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
+ser = serial.Serial(picoPort, 115200, timeout=1)
 
 # give pico some time to initialize
 time.sleep(2)

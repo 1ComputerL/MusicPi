@@ -1,20 +1,27 @@
+# This module provides a music player class that can play, stop, pause, fetch current playing song info, and control media playback using mpv and its IPC interface
+# It is used by music_system.py
+# Created by AI with instructions and code from ComputerL
+
 ### IMPORTS ###
 import sys
 import os
-# get the parent directory of this file
-parentdir = os.path.dirname(os.path.abspath(__file__))
-# add the MusicPi directory to the system path
-sys.path.append(parentdir)
 import subprocess
 import json
 import logging
 import socket
+import re
 
 ### LOGGING SETUP ###
 # create new logger
 log = logging.getLogger('my_logger')
 # configure the logger
 logging.basicConfig(filename=parentdir + '/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+
+### PATH SETUP ###
+# get the parent directory of this file
+parentdir = os.path.dirname(os.path.abspath(__file__))
+# add the MusicPi directory to the system path
+sys.path.append(parentdir)
 
 ### MUSIC CLASS ###
 class Player:
@@ -102,14 +109,17 @@ class Player:
             client.close()
 # decode the response and load it as JSON
             result = json.loads(response.decode('utf-8'))
-# if there is an error part and it has anything in it, set data to nothing
+# if there is an error part
             if "error" in result:
+# if the error is NOT a cheerful "success"
                 if result["error"] and result["error"] != "success":
+# feed the error to the result
                     result["data"] = "nothing"
+# always delete the error part
                 del result["error"]
 # take off the file name extension (.*) and the numbers at the beginning of the file name (0-9.)
             if result.get("data") and isinstance(result["data"], str):
-                import re
+# remove the file extension and leading numbers from the song title with re
                 result["data"] = re.sub(r'\.[^.\\/:*?"<>|\s]+$', '', result["data"])
                 result["data"] = re.sub(r'^\d{2}\.\s', '', result["data"])
 # logging
