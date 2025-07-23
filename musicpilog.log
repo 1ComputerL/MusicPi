@@ -1,0 +1,13 @@
+2025-07-23 12:43:56,604 - BackgroundProgram: background.py started; initiated things (log, stop signal handler, key listener);
+2025-07-23 12:44:01,373 - BackgroundProgram: opened music_system.py main program as subprocess;
+2025-07-23 12:44:03,236 - menus.json not found at /home/me/MusicPi/menus.json. Creating a new one.
+2025-07-23 12:44:03,245 - Created new menus.json with structure from /home/me/Music.
+2025-07-23 12:44:04,491 - VolHandler: VolHandler started; initiated things;;
+2025-07-23 12:44:06,545 - VolHandler: connected to pico;
+2025-07-23 13:06:00,331 - BackgroundProgram: background.py started; initiated things (log, stop signal handler, key listener);
+2025-07-23 13:07:41,855 - BackgroundProgram: opened music_system.py main program as subprocess;
+2025-07-23 13:07:43,396 - Successfully updated menus.json with the new structure from /home/me/Music.
+2025-07-23 13:07:44,595 - VolHandler: VolHandler started; initiated things;;
+2025-07-23 13:07:46,646 - VolHandler: connected to pico;
+2025-07-23 13:15:46,741 - BackgroundProgram: terminated music_system.py main program;
+2025-07-23 13:15:49,082 - VolHandler: recieved stop signal, exiting now;

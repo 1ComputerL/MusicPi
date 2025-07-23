@@ -86,7 +86,7 @@ while True:
 # update the variable
         prev_power_button_state = False
 # logging
-        log.info('BackgroundProgram: terminated system.py main program;')
+        log.info('BackgroundProgram: terminated music_system.py main program;')
 
 # if the screen was just now opened
     if screenOpenState == False and screenOpenState_prev == True:
@@ -108,7 +108,7 @@ while True:
 # update the variable
         prev_power_button_state = True
 # logging
-        log.info('BackgroundProgram: opened system.py main program as subprocess;')
+        log.info('BackgroundProgram: opened music_system.py main program as subprocess;')
 
 # if the screen was just now closed
     if screenOpenState == True and screenOpenState_prev == False:

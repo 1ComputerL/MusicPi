@@ -1,18 +1,19 @@
 import os
 import sys
-# get the parent directory of this file
-parentdir = os.path.dirname(os.path.abspath(__file__))
-# add the MusicPi directory to the system path
-sys.path.append(parentdir)
 import json
 import logging
 import re
 from mutagen.easyid3 import EasyID3
 from mutagen.id3 import ID3NoHeaderError
 
+# Get the parent directory of this file
+parentdir = os.path.dirname(os.path.abspath(__file__))
+# Add the MusicPi directory to the system path
+sys.path.append(parentdir)
+
 # Logging setup
 log = logging.getLogger('generate_albums_json')
-logging.basicConfig(filename=parentdir+'/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename=parentdir + '/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 def get_artist_from_mp3(file_path):
     """
@@ -72,7 +73,7 @@ def build_folder_structure(path):
         "title": "Play All",
         "action": {
             "do": "mpv",
-            "path": full_path  # Use absolute path
+            "path": full_path
         }
     }
 
@@ -89,7 +90,7 @@ def build_folder_structure(path):
             "artist": artist_name,
             "action": {
                 "do": "mpv",
-                "path": file_path  # Use absolute path
+                "path": file_path
             }
         }
 
@@ -101,29 +102,41 @@ def build_folder_structure(path):
     return node
 
 if __name__ == "__main__":
-    # Set the root directory to home/username/Music
+    # Set the root directory to ~/Music
     root_dir = os.path.expanduser("~/Music")
     tree = build_folder_structure(root_dir)
 
-    # Load the existing menus.json
-    menus_file = parentdir+"/menus.json"
+    menus_file = os.path.join(parentdir, "menus.json")
+
     try:
         with open(menus_file, "r", encoding='utf-8') as f:
             menus_data = json.load(f)
-
-        # Place the generated structure inside the "Play" section
-        menus_data["0"]["items"]["0"]["items"] = tree["items"]
-        menus_data["0"]["items"]["0"]["title"] = tree["title"]
-
-        # Save the updated menus.json
+    except FileNotFoundError:
+        log.warning(f"menus.json not found at {menus_file}. Creating a new one.")
+        menus_data = {
+            "0": {
+                "title": "Main Menu",
+                "items": {
+                    "0": {
+                        "title": tree["title"],
+                        "items": tree["items"]
+                    }
+                }
+            }
+        }
         with open(menus_file, "w", encoding='utf-8') as f:
             json.dump(menus_data, f, indent=4)
+        log.info(f"Created new menus.json with structure from {root_dir}.")
+    else:
+        try:
+            menus_data["0"]["items"]["0"]["items"] = tree["items"]
+            menus_data["0"]["items"]["0"]["title"] = tree["title"]
 
-        log.info(f"Successfully updated menus.json with the new structure from {root_dir}.")
+            with open(menus_file, "w", encoding='utf-8') as f:
+                json.dump(menus_data, f, indent=4)
 
-    except FileNotFoundError:
-        log.error(f"menus.json not found at {menus_file}. Please ensure the file exists.")
-    except KeyError as e:
-        log.error(f"KeyError while updating menus.json: {e}")
-    except Exception as e:
-        log.error(f"Unexpected error: {e}")
+            log.info(f"Successfully updated menus.json with the new structure from {root_dir}.")
+        except KeyError as e:
+            log.error(f"KeyError while updating menus.json: {e}")
+        except Exception as e:
+            log.error(f"Unexpected error: {e}")

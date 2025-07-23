@@ -1,0 +1,1295 @@
+{
+    "0": {
+        "title": "Main Menu",
+        "items": {
+            "0": {
+                "title": "Music",
+                "items": {
+                    "0": {
+                        "title": "Play All",
+                        "action": {
+                            "do": "mpv",
+                            "path": "/home/me/Music"
+                        }
+                    },
+                    "1": {
+                        "title": "Albums",
+                        "items": {
+                            "0": {
+                                "title": "Play All",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/01. Albums"
+                                }
+                            },
+                            "1": {
+                                "title": "Minecraft",
+                                "items": {
+                                    "0": {
+                                        "title": "Play All",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/01. Minecraft"
+                                        }
+                                    },
+                                    "1": {
+                                        "title": "Volume Alpha",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/01. Volume Alpha"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Volume Alpha",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/01. Volume Alpha/Volume Alpha.m3u"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "2": {
+                                        "title": "Volume Beta",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/02. Volume Beta"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Volume Beta",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/02. Volume Beta/Volume Beta.m3u"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "3": {
+                                        "title": "Update Aquatic",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/03. Update Aquatic"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Shuniji",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/03. Update Aquatic/01. Shuniji.mp3"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "Dragon Fish",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/03. Update Aquatic/02. Dragon Fish.mp3"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "Axolotl",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/03. Update Aquatic/03. Axolotl.mp3"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "4": {
+                                        "title": "Nether Update",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/04. Nether Update"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Chrysopoeia",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/04. Nether Update/01. Chrysopoeia.mp3"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "Rubedo",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/04. Nether Update/02. Rubedo.mp3"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "So Below",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/04. Nether Update/03. So Below.mp3"
+                                                }
+                                            },
+                                            "4": {
+                                                "title": "Pigstep",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/04. Nether Update/04. Pigstep.mp3"
+                                                }
+                                            },
+                                            "5": {
+                                                "title": "Pigstep (Stereo Mix)",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/04. Nether Update/05. Pigstep (Stereo Mix).mp3"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "5": {
+                                        "title": "Caves & Cliffs",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Stand Tall",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs/01. Stand Tall.mp3"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "Left to Bloom",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs/02. Left to Bloom.mp3"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "Ancestry",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs/03. Ancestry.mp3"
+                                                }
+                                            },
+                                            "4": {
+                                                "title": "Wending",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs/04. Wending.mp3"
+                                                }
+                                            },
+                                            "5": {
+                                                "title": "Infinite Amethyst",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs/05. Infinite Amethyst.mp3"
+                                                }
+                                            },
+                                            "6": {
+                                                "title": "One More Day",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs/06. One More Day.mp3"
+                                                }
+                                            },
+                                            "7": {
+                                                "title": "otherside",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs/07. otherside.mp3"
+                                                }
+                                            },
+                                            "8": {
+                                                "title": "Floating Dream",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs/08. Floating Dream.mp3"
+                                                }
+                                            },
+                                            "9": {
+                                                "title": "Comforting Memories",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs/09. Comforting Memories.mp3"
+                                                }
+                                            },
+                                            "10": {
+                                                "title": "An Ordinary Day",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/05. Caves & Cliffs/10. An Ordinary Day.mp3"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "6": {
+                                        "title": "The Wild Update",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/06. The Wild Update"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Firebugs",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/06. The Wild Update/01. Firebugs.mp3"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "Aerie",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/06. The Wild Update/02. Aerie.mp3"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "Labyrinthine",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/06. The Wild Update/03. Labyrinthine.mp3"
+                                                }
+                                            },
+                                            "4": {
+                                                "title": "Five",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/06. The Wild Update/04. Five.mp3"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "7": {
+                                        "title": "Trails & Tales",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/07. Trails & Tales"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Echo in the Wind",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/07. Trails & Tales/01. Echo in the Wind.mp3"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "A Familiar Room",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/07. Trails & Tales/02. A Familiar Room.mp3"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "Bromeliad",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/07. Trails & Tales/03. Bromeliad.mp3"
+                                                }
+                                            },
+                                            "4": {
+                                                "title": "Crescent Dunes",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/07. Trails & Tales/04. Crescent Dunes.mp3"
+                                                }
+                                            },
+                                            "5": {
+                                                "title": "Relic",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/07. Trails & Tales/05. Relic.mp3"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "8": {
+                                        "title": "Tricky Trials",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Featherfall",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/01. Featherfall.mp3"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "Watcher",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/02. Watcher.mp3"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "Puzzlebox",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/03. Puzzlebox.mp3"
+                                                }
+                                            },
+                                            "4": {
+                                                "title": "komorebi",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/04. komorebi.mp3"
+                                                }
+                                            },
+                                            "5": {
+                                                "title": "pokopoko",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/05. pokopoko.mp3"
+                                                }
+                                            },
+                                            "6": {
+                                                "title": "yakusoku",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/06. yakusoku.mp3"
+                                                }
+                                            },
+                                            "7": {
+                                                "title": "Deeper",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/07. Deeper.mp3"
+                                                }
+                                            },
+                                            "8": {
+                                                "title": "Eld Unknown",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/08. Eld Unknown.mp3"
+                                                }
+                                            },
+                                            "9": {
+                                                "title": "Endless",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/09. Endless.mp3"
+                                                }
+                                            },
+                                            "10": {
+                                                "title": "Creator",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/10. Creator.mp3"
+                                                }
+                                            },
+                                            "11": {
+                                                "title": "Creator (Music Box Version)",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/11. Creator (Music Box Version).mp3"
+                                                }
+                                            },
+                                            "12": {
+                                                "title": "Precipice",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/08. Tricky Trials/12. Precipice.mp3"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "9": {
+                                        "title": "Game Drop 2",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/09. Game Drop 2"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Lilypad",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/09. Game Drop 2/01. Lilypad.mp3"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "Below and Above",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/09. Game Drop 2/02. Below and Above.mp3"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "O's Piano",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/09. Game Drop 2/03. O's Piano.mp3"
+                                                }
+                                            },
+                                            "4": {
+                                                "title": "Broken Clocks",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/09. Game Drop 2/04. Broken Clocks.mp3"
+                                                }
+                                            },
+                                            "5": {
+                                                "title": "Fireflies",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/09. Game Drop 2/05. Fireflies.mp3"
+                                                }
+                                            },
+                                            "6": {
+                                                "title": "Tears",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/09. Game Drop 2/06. Tears.mp3"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "10": {
+                                        "title": "Other",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/10. Other"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Boss",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/10. Other/Boss.mp3"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "Cat",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/10. Other/Cat.mid"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "11": {
+                                        "title": "Piano",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/11. Piano"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "AlphaPiano",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/11. Piano/AlphaPiano.mp3"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "MinecraftVolumeAlphaPiano_(most)",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/11. Piano/MinecraftVolumeAlphaPiano_(most).mp3"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "taswell-piano-from-real-midi",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/01. Minecraft/11. Piano/taswell-piano-from-real-midi.mp3"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "2": {
+                                "title": "Star Wars",
+                                "items": {
+                                    "0": {
+                                        "title": "Play All",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/02. Star Wars"
+                                        }
+                                    },
+                                    "1": {
+                                        "title": "Movies",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/02. Star Wars/01. Movies"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Duel of the Fates",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/02. Star Wars/01. Movies/Duel of the Fates.m3u"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "2": {
+                                        "title": "Shows",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/02. Star Wars/02. Shows"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Epic Boba Fett",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/02. Star Wars/02. Shows/Epic Boba Fett.m3u"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "The Book of Boba Fett",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/02. Star Wars/02. Shows/The Book of Boba Fett.m3u"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "The Mandalorian Main Theme",
+                                                "artist": "The Mandalorian OST",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/02. Star Wars/02. Shows/The Mandalorian Main Theme.mp3"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "3": {
+                                        "title": "Other",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/02. Star Wars/03. Other"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "My Stick",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/02. Star Wars/03. Other/My Stick.m3u"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "3": {
+                                "title": "Harry Potter",
+                                "items": {
+                                    "0": {
+                                        "title": "Play All",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/03. Harry Potter"
+                                        }
+                                    }
+                                }
+                            },
+                            "4": {
+                                "title": "Animal Crossing",
+                                "items": {
+                                    "0": {
+                                        "title": "Play All",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/04. Animal Crossing"
+                                        }
+                                    },
+                                    "1": {
+                                        "title": "Piano",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/04. Animal Crossing/01. Piano"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Animal Crossing - Load Game",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/04. Animal Crossing/01. Piano/01. Animal Crossing - Load Game.mp3"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "Animal Crossing New Horizons - Welcome Horizons Opening Theme",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/04. Animal Crossing/01. Piano/02. Animal Crossing New Horizons - Welcome Horizons Opening Theme.mp3"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "Animal Crossing New Leaf - Main Theme",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/04. Animal Crossing/01. Piano/03. Animal Crossing New Leaf - Main Theme.mp3"
+                                                }
+                                            },
+                                            "4": {
+                                                "title": "Animal Crossing - Load Game",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/04. Animal Crossing/01. Piano/04. Animal Crossing - Load Game.mid"
+                                                }
+                                            },
+                                            "5": {
+                                                "title": "Animal Crossing New Horizons - Welcome Horizons Opening Theme",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/04. Animal Crossing/01. Piano/05. Animal Crossing New Horizons - Welcome Horizons Opening Theme.mid"
+                                                }
+                                            },
+                                            "6": {
+                                                "title": "Animal Crossing New Leaf - Main Theme",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/04. Animal Crossing/01. Piano/06. Animal Crossing New Leaf - Main Theme.mid"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "5": {
+                                "title": "BurgerKing",
+                                "items": {
+                                    "0": {
+                                        "title": "Play All",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/05. BurgerKing"
+                                        }
+                                    },
+                                    "1": {
+                                        "title": "WhopperWhopperShort",
+                                        "artist": "Unknown Artist",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/05. BurgerKing/01. WhopperWhopperShort.mp3"
+                                        }
+                                    },
+                                    "2": {
+                                        "title": "WhopperWhopperLong",
+                                        "artist": "Unknown Artist",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/05. BurgerKing/02. WhopperWhopperLong.mp3"
+                                        }
+                                    },
+                                    "3": {
+                                        "title": "Whopper Full",
+                                        "artist": "Unknown Artist",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/05. BurgerKing/Whopper Full.m3u"
+                                        }
+                                    }
+                                }
+                            },
+                            "6": {
+                                "title": "NewRallyX",
+                                "items": {
+                                    "0": {
+                                        "title": "Play All",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX"
+                                        }
+                                    },
+                                    "1": {
+                                        "title": "NEW RALLY X - CREDIT SOUND",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/01. NEW RALLY X - CREDIT SOUND.mp3"
+                                        }
+                                    },
+                                    "2": {
+                                        "title": "NEW RALLY X - GAME START MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/02. NEW RALLY X - GAME START MUSIC.mp3"
+                                        }
+                                    },
+                                    "3": {
+                                        "title": "NEW RALLY X - IN GAME MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/03. NEW RALLY X - IN GAME MUSIC.mp3"
+                                        }
+                                    },
+                                    "4": {
+                                        "title": "NEW RALLY X - MY CAR -RUN",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/04. NEW RALLY X - MY CAR -RUN.mp3"
+                                        }
+                                    },
+                                    "5": {
+                                        "title": "NEW RALLY X - MY CAR -SMOKESCREEN",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/05. NEW RALLY X - MY CAR -SMOKESCREEN.mp3"
+                                        }
+                                    },
+                                    "6": {
+                                        "title": "NEW RALLY X - NORMAL FLAG -GET (1)",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/06. NEW RALLY X - NORMAL FLAG -GET (1).mp3"
+                                        }
+                                    },
+                                    "7": {
+                                        "title": "NEW RALLY X - NORMAL FLAG -GET",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/06. NEW RALLY X - NORMAL FLAG -GET.mp3"
+                                        }
+                                    },
+                                    "8": {
+                                        "title": "NEW RALLY X - SPECIAL FLAG -GET",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/07. NEW RALLY X - SPECIAL FLAG -GET.mp3"
+                                        }
+                                    },
+                                    "9": {
+                                        "title": "NEW RALLY X - ROUND CLEAR MUSIC (1)",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/08. NEW RALLY X - ROUND CLEAR MUSIC (1).mp3"
+                                        }
+                                    },
+                                    "10": {
+                                        "title": "NEW RALLY X - ROUND CLEAR MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/08. NEW RALLY X - ROUND CLEAR MUSIC.mp3"
+                                        }
+                                    },
+                                    "11": {
+                                        "title": "NEW RALLY X - FUEL BONUS SOUND",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/09. NEW RALLY X - FUEL BONUS SOUND.mp3"
+                                        }
+                                    },
+                                    "12": {
+                                        "title": "NEW RALLY X - EXTEND SOUND",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/10. NEW RALLY X - EXTEND SOUND.mp3"
+                                        }
+                                    },
+                                    "13": {
+                                        "title": "NEW RALLY X - CHALLENGING STAGE START MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/11. NEW RALLY X - CHALLENGING STAGE START MUSIC.mp3"
+                                        }
+                                    },
+                                    "14": {
+                                        "title": "CHNEW RALLY X - ALLENGING STAGE MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/12. CHNEW RALLY X - ALLENGING STAGE MUSIC.mp3"
+                                        }
+                                    },
+                                    "15": {
+                                        "title": "NEW RALLY X - EMPTY WARNING SOUND",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/13. NEW RALLY X - EMPTY WARNING SOUND.mp3"
+                                        }
+                                    },
+                                    "16": {
+                                        "title": "NEW RALLY X - MY CAR -CRASH",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/14. NEW RALLY X - MY CAR -CRASH.mp3"
+                                        }
+                                    },
+                                    "17": {
+                                        "title": "NEW RALLY X - HIGH SCORE MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/15. NEW RALLY X - HIGH SCORE MUSIC.mp3"
+                                        }
+                                    },
+                                    "18": {
+                                        "title": "NEW RALLY X - SERVICE SWITCH SOUND",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/16. NEW RALLY X - SERVICE SWITCH SOUND.mp3"
+                                        }
+                                    },
+                                    "19": {
+                                        "title": "NEW RALLY X - GAME PLAY",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/17. NEW RALLY X - GAME PLAY.mp3"
+                                        }
+                                    },
+                                    "20": {
+                                        "title": "RALLY X - CREDIT SOUND",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/18. RALLY X - CREDIT SOUND.mp3"
+                                        }
+                                    },
+                                    "21": {
+                                        "title": "RALLY X - GAME START MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/19. RALLY X - GAME START MUSIC.mp3"
+                                        }
+                                    },
+                                    "22": {
+                                        "title": "RALLY X - IN GAME MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/20. RALLY X - IN GAME MUSIC.mp3"
+                                        }
+                                    },
+                                    "23": {
+                                        "title": "RALLY X - MY CAR -RUN,EMPTY,SLOWDOWN",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/21. RALLY X - MY CAR -RUN,EMPTY,SLOWDOWN.mp3"
+                                        }
+                                    },
+                                    "24": {
+                                        "title": "RALLY X - MY CAR -SMOKESCREEN",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/22. RALLY X - MY CAR -SMOKESCREEN.mp3"
+                                        }
+                                    },
+                                    "25": {
+                                        "title": "RALLY X - NORMAL FLAG -GET",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/23. RALLY X - NORMAL FLAG -GET.mp3"
+                                        }
+                                    },
+                                    "26": {
+                                        "title": "RALLY X - SPECIAL FLAG -GET",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/24. RALLY X - SPECIAL FLAG -GET.mp3"
+                                        }
+                                    },
+                                    "27": {
+                                        "title": "RALLY X - ROUND CLEAR MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/25. RALLY X - ROUND CLEAR MUSIC.mp3"
+                                        }
+                                    },
+                                    "28": {
+                                        "title": "RALLY X - FUEL BONUS SOUND",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/26. RALLY X - FUEL BONUS SOUND.mp3"
+                                        }
+                                    },
+                                    "29": {
+                                        "title": "RALLY X - EXTEND SOUND",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/27. RALLY X - EXTEND SOUND.mp3"
+                                        }
+                                    },
+                                    "30": {
+                                        "title": "RALLY X - CHALLENGING STAGE START MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/28. RALLY X - CHALLENGING STAGE START MUSIC.mp3"
+                                        }
+                                    },
+                                    "31": {
+                                        "title": "RALLY X - EMPTY WARNING SOUND",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/29. RALLY X - EMPTY WARNING SOUND.mp3"
+                                        }
+                                    },
+                                    "32": {
+                                        "title": "RALLY X - MY CAR -CRASH",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/30. RALLY X - MY CAR -CRASH.mp3"
+                                        }
+                                    },
+                                    "33": {
+                                        "title": "RALLY X - HIGH SCORE MUSIC",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/31. RALLY X - HIGH SCORE MUSIC.mp3"
+                                        }
+                                    },
+                                    "34": {
+                                        "title": "RALLY X - SERVICE SWITCH SOUND (1)",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/32. RALLY X - SERVICE SWITCH SOUND (1).mp3"
+                                        }
+                                    },
+                                    "35": {
+                                        "title": "RALLY X - SERVICE SWITCH SOUND",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/32. RALLY X - SERVICE SWITCH SOUND.mp3"
+                                        }
+                                    },
+                                    "36": {
+                                        "title": "RALLY X - GAME PLAY",
+                                        "artist": "namco LEGENDARY;Bandai Namco Game Music",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/06. NewRallyX/33. RALLY X - GAME PLAY.mp3"
+                                        }
+                                    },
+                                    "37": {
+                                        "title": "Piano (played by me)",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/06. NewRallyX/Piano (played by me)"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "1. NewRallyX",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/06. NewRallyX/Piano (played by me)/1. NewRallyX.AVI"
+                                                }
+                                            },
+                                            "2": {
+                                                "title": "2. NewRallyX",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/06. NewRallyX/Piano (played by me)/2. NewRallyX.AVI"
+                                                }
+                                            },
+                                            "3": {
+                                                "title": "NewRallyX-AuntMsPiano",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/06. NewRallyX/Piano (played by me)/NewRallyX-AuntMsPiano.AVI"
+                                                }
+                                            },
+                                            "4": {
+                                                "title": "NewRallyX-fast",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/06. NewRallyX/Piano (played by me)/NewRallyX-fast.AVI"
+                                                }
+                                            },
+                                            "5": {
+                                                "title": "NewRallyX-mechanoid",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/06. NewRallyX/Piano (played by me)/NewRallyX-mechanoid.AVI"
+                                                }
+                                            },
+                                            "6": {
+                                                "title": "NewRallyX-slow",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/06. NewRallyX/Piano (played by me)/NewRallyX-slow.AVI"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "7": {
+                                "title": "Orchestra",
+                                "items": {
+                                    "0": {
+                                        "title": "Play All",
+                                        "action": {
+                                            "do": "mpv",
+                                            "path": "/home/me/Music/01. Albums/07. Orchestra"
+                                        }
+                                    },
+                                    "1": {
+                                        "title": "Tchaikovsky Orchestra Anna Fedorova",
+                                        "items": {
+                                            "0": {
+                                                "title": "Play All",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/07. Orchestra/Tchaikovsky Orchestra Anna Fedorova"
+                                                }
+                                            },
+                                            "1": {
+                                                "title": "Piano Concerto No. 1, Op. 23",
+                                                "artist": "Unknown Artist",
+                                                "action": {
+                                                    "do": "mpv",
+                                                    "path": "/home/me/Music/01. Albums/07. Orchestra/Tchaikovsky Orchestra Anna Fedorova/Piano Concerto No. 1, Op. 23.m3u"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "2": {
+                        "title": "Playlists",
+                        "items": {
+                            "0": {
+                                "title": "Play All",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/02. Playlists"
+                                }
+                            }
+                        }
+                    },
+                    "3": {
+                        "title": "Artists",
+                        "items": {
+                            "0": {
+                                "title": "Play All",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/03. Artists"
+                                }
+                            },
+                            "1": {
+                                "title": "Lena Raine",
+                                "artist": "Unknown Artist",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/03. Artists/Lena Raine.m3u"
+                                }
+                            },
+                            "2": {
+                                "title": "C418",
+                                "artist": "Unknown Artist",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/03. Artists/C418.m3u"
+                                }
+                            }
+                        }
+                    },
+                    "4": {
+                        "title": "Stream",
+                        "items": {
+                            "0": {
+                                "title": "Play All",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/04. Stream"
+                                }
+                            },
+                            "1": {
+                                "title": "Vermin Supreme",
+                                "artist": "Unknown Artist",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/04. Stream/Vermin Supreme.m3u"
+                                }
+                            },
+                            "2": {
+                                "title": "97.1 The Ticket",
+                                "artist": "Unknown Artist",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/04. Stream/97.1 The Ticket.m3u"
+                                }
+                            }
+                        }
+                    },
+                    "5": {
+                        "title": "Other",
+                        "items": {
+                            "0": {
+                                "title": "Play All",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/05. Other"
+                                }
+                            },
+                            "1": {
+                                "title": "If I Were a Rich Man",
+                                "artist": "Unknown Artist",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/05. Other/If I Were a Rich Man.m3u"
+                                }
+                            },
+                            "2": {
+                                "title": "The Victors March",
+                                "artist": "Unknown Artist",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/05. Other/The Victors March.m3u"
+                                }
+                            },
+                            "3": {
+                                "title": "yeah",
+                                "artist": "Unknown Artist",
+                                "action": {
+                                    "do": "mpv",
+                                    "path": "/home/me/Music/05. Other/yeah.m3u"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

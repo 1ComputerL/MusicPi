@@ -1,5 +1,6 @@
 ### IMPORTS ###
 import sys
+import os
 # get the parent directory of this file
 parentdir = os.path.dirname(os.path.abspath(__file__))
 # add the MusicPi directory to the system path
