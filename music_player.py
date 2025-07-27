@@ -11,17 +11,17 @@ import logging
 import socket
 import re
 
-### LOGGING SETUP ###
-# create new logger
-log = logging.getLogger('my_logger')
-# configure the logger
-logging.basicConfig(filename=parentdir + '/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
-
 ### PATH SETUP ###
 # get the parent directory of this file
 parentdir = os.path.dirname(os.path.abspath(__file__))
 # add the MusicPi directory to the system path
 sys.path.append(parentdir)
+
+### LOGGING SETUP ###
+# create new logger
+log = logging.getLogger('my_logger')
+# configure the logger
+logging.basicConfig(filename=parentdir + '/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 ### MUSIC CLASS ###
 class Player:

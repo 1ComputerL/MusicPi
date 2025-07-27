@@ -1,20 +1,16 @@
 # This is the main part of the MusicPi system
 # It displays a media menu based on the folder detailed in the menus.json file
 # It displays everything on the OLED display using the OLED.py module
-# The menu can be navigated with different key presses taken from the input device (pico)
+# The menu can be navigated with different key presses taken from the input device (pico) by using the evdevlib.py module
 # And media that is selected can be played with the music_player.py module
 # Also, it starts handle_volume.py to handle volume control
+# And uses generate_albums_json.py to update the menus.json file
+# Created by ComputerL
 
 ### IMPORTS ###
 import sys
 import os
-# get the parent directory of this file
-parentdir = os.path.dirname(os.path.abspath(__file__))
-# add the MusicPi directory to the system path
-sys.path.append(parentdir)
-import os
 import subprocess
-import traceback
 import signal
 import logging
 import OLED as oled
@@ -22,11 +18,12 @@ import music_player
 import evdevlib
 import json
 import time
-from urllib.parse import urlparse
-import tkinter as tk
-import random
 
 ### SETUP SECTION 1 ###
+# get the parent directory of this file
+parentdir = os.path.dirname(os.path.abspath(__file__))
+# add the MusicPi directory to the system path
+sys.path.append(parentdir)
 # create new logger
 log = logging.getLogger('my_logger')
 # configure the logger
@@ -36,7 +33,7 @@ log.info("got past logging setup")
 os.system("/bin/python " + parentdir + "/generate_albums_json.py")
 # delay
 time.sleep(.5)
-log.info("got past updating menus.jsonn")
+log.info("got past updating menus.json")
 # set up the OLED display
 OLED = oled.OLED()
 log.info("got past OLED setup")
@@ -181,8 +178,6 @@ def press (key):
                 current_item = 1
 # update the display
                 menuChange=True
-# update menu history
-                #menuHist.pop()
 
             else:
 # update the current item count

@@ -1,4 +1,5 @@
 # This program connects to a Raspberry Pi Pico via serial port and receives volume control commands
+# It then adjusts the system volume based on the received commands
 # The pico sends these volume control commands based on the position of a potetentiometer connected to it
 # The program could be edited to get volume control commands from other sources
 # It is run by music_system.py

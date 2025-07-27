@@ -1,15 +1,20 @@
 # MusicPi
+What if you wanted to create a media player? Something portable, maybe even housed in an old boombox. And you decide to go completely crazy and gut out somebody’s dead Sony CFD-V15, replace all the parts but the speakers, and design all the software yourself. Maybe you feel that with Raspberry Pi, an audio DAC, some wrecking tools, and a lot of programming, you can make it work. But how?
 
-MusicPi is a modular, extensible, and hackable music/media system programmed in python for Raspberry Pi, designed for physical controls, OLED display, and integration with custom hardware (like Pico microcontrollers). It’s perfect for building your own jukebox, media center, or interactive music player!
+That’s the challenge I gave myself, the one I worked hard on and still help to improve. MusicPi, a Linux and Python based system powered by a Raspberry Pi 4 and Pico! Running on programs designed for ease of use. An amazing, open source alternative to popular platforms with their distractions.
+
+And here's the Github repo!
+
+MusicPi is a modular, extensible, and hackable music/media Python system programmed in python for Raspberry Pi, designed for physical controls, OLED display, and integration with custom hardware (like Pico microcontrollers). It’s perfect for building your own jukebox, media center, or interactive music player! The system uses different programs to support easy setup and bug tracking.
 
 ---
 
 ## Features
 
 - **Physical Controls:** Use buttons, rotary encoders, and potentiometers for playback, navigation, and volume/tone control.
-- **OLED Display:** Real-time menu, notifications, and playback info on a Waveshare OLED screen.
+- **OLED Display:** Real-time menu, notifications, and playback info on an OLED screen.
 - **MPV Integration:** Robust playback via MPV, supporting local files and streams.
-- **Dynamic Menus:** Auto-generated menus from your music folder
+- **Dynamic Menus:** Auto-generated menus from a specified music folder
 - **Pico Microcontroller Support:** CircuitPython/MicroPython code for sending keypresses and analog data to the Pi.
 - **Logging:** All actions and errors are logged for easy debugging.
 - **Modular Design:** Easy to extend with new controls, displays, or features.
@@ -20,12 +25,12 @@ MusicPi is a modular, extensible, and hackable music/media system programmed in 
 
 ```
 background.py           # Manages system state, power, and screen
-evdevlib.py             # Makes using evdev easer to help with listening for key events from input devices
-generate_albums_json.py # Scans music folders and generates menu JSON
-handle_volume.py        # Handles volume changes via serial (Pico)
+evdevlib.py             # Makes using evdev easier to help with listening for key events from input devices
+generate_albums_json.py # Scans music folders and generates menu JSON for music_system.py
+handle_volume.py        # Handles volume commands via serial and adjust volume accordingly
 music_player.py         # MPV-based playback control
 music_system.py         # Main system logic and menu navigation
-OLED.py                 # OLED display abstraction
+OLED.py                 # OLED display library
 OLED/                   # OLED library, examples, and assets
 Pico/                   # Microcontroller code and examples
 ```
@@ -36,13 +41,13 @@ Pico/                   # Microcontroller code and examples
 
 ### 1. Dependencies
 
-- Python 3.x
-- [MPV](https://mpv.io/) media player
+- [Python](https://docs.python.org/3/) for running the programs
+- [MPV](https://mpv.io/) for playing media
+- [socat](https://linux.die.net/man/1/socat) for sending ipc commands to mpv processes
 - [Pillow](https://python-pillow.org/) for image handling
 - [Mutagen](https://mutagen.readthedocs.io/) for MP3 metadata
 - [evdev](https://python-evdev.readthedocs.io/) for input device handling
-- [gpiozero](https://gpiozero.readthedocs.io/) for GPIO
-- [Waveshare OLED Python Library](OLED/lib/waveshare_OLED/)
+- [Waveshare OLED Python Library](OLED/lib/waveshare_OLED/) for control of the OLED display
 
 Install dependencies:
 ```sh
@@ -53,13 +58,11 @@ sudo pip3 install mutagen evdev gpiozero Pillow
 
 ### 2. Hardware Connections
 
-- **OLED Display:** Connect as per [OLED/readme_EN.txt](OLED/readme_EN.txt).
-- **Buttons/Potentiometers:** Wire to Pico as per [Pico/main.py](Pico/main.py).
-- **Serial Connection:** Pico to Pi via USB (for volume/tone).
+- **Nothing:**
 
 ### 3. Configuration
 
-- Place your music in `/home/me/Music` (or edit paths in the code).
+- Place your music in `/home/me/Music` or 
 - Edit device paths in the various programs if needed.
 - Reprogram bits and pieces to work with alternate hardware
 
@@ -109,20 +112,12 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 ---
 
 ## Extending MusicPi
-
+Please feel free to suggest and push improvements to the repo. Here are a few things that could be added:
 - Add new menu actions in [`generate_albums_json.py`](generate_albums_json.py).
-- Add new hardware controls by extending [`evdevlib.py`](evdevlib.py) or Pico code.
-- Customize OLED display in [`OLED.py`](OLED.py).
+- Add a web socket program to host a website and push keypresses inside the system based on buttons pressed on the website.
 
 ---
 
-## Example: Adding a New Button
-
-1. Wire the button to Pico and assign a GPIO pin.
-2. In [Pico/main.py](Pico/main.py), send a new keycode.
-3. In [`music_system.py`](music_system.py), handle the new key in the `press` function.
-
----
 
 ## References
 
@@ -136,12 +131,14 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 ## Credits
 
 - ComputerL
+- VS Code
 - Waveshare for OLED libraries
 - Adafruit for HID libraries
+- VS Code
+- ChatGPT
 - Github Copilot helped mainly with evdevlib.py, generate_albums_json.py, and documentation
 
 ---
 
 ## License
-
-MIT License for all custom code. See individual files for third-party licenses.
+?

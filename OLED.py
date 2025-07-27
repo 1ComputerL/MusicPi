@@ -1,10 +1,16 @@
+# This program is used to control the OLED display of the MusicPi system
+# It provides functions to display notifications, menus, and power status
+# It scales text to fit the display and handles different font sizes
+# It could be customized to work with different OLED models
+# Created by ComputerL
+
 ### IMPORTS ###
-import time
 import os
 import sys
 from PIL import Image, ImageDraw, ImageFont
 import logging
 
+### PATH SETUP ###
 # get the parent directory of this file
 parentdir = os.path.dirname(os.path.abspath(__file__))
 # path variables

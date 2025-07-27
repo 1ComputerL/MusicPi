@@ -1,4 +1,4 @@
-# This program navigates to a media directory and generates a JSON file readable by music_system.py to play the media files
+# This program navigates to a media directory and generates a JSON structure of the directory readable by music_system.py to play the media files provided
 # It is run by music_system.py
 # Created by AI with instructions and code from ComputerL
 

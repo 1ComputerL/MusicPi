@@ -3,19 +3,15 @@
 # Created by AI with instructions and code from ComputerL
 
 ### IMPORTS ###
-
 # import evdev classes for reading input events
 from evdev import InputDevice, categorize, ecodes
-
 # import threading module to run listener in background
 import threading
-
 # import json to read device settings from a file
 import json
 
 
 ### CONFIGURATION ###
-
 # open settings.json file in read mode
 with open('settings.json', 'r') as file:
     # parse the json content into a python dictionary
@@ -26,7 +22,6 @@ eventDevice = data["eventDevice"]
 
 
 ### LISTENER CLASS ###
-
 # listener class to handle key events from the device
 class Listener:
 
