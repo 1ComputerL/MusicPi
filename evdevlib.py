@@ -9,12 +9,19 @@ from evdev import InputDevice, categorize, ecodes
 import threading
 # import json to read device settings from a file
 import json
+import sys
+import os
 
+### PATH SETUP ###
+# get the parent directory of this file
+parentdir = os.path.dirname(os.path.abspath(__file__))
+# add the MusicPi directory to the system path
+sys.path.append(parentdir)
 
 ### CONFIGURATION ###
 # open settings.json file in read mode
-with open('settings.json', 'r') as file:
-    # parse the json content into a python dictionary
+with open(parentdir+'/settings.json', 'r') as file:
+# parse the json content into a python dictionary
     data = json.load(file)
 
 # extract the value for "eventDevice" key from the dictionary
@@ -48,7 +55,7 @@ class Listener:
         """
         listen to key events from the input device.
         calls self.on_press when a key is pressed.
-        """
+       s """
         try:
             # create an InputDevice instance with the given path
             self._device = InputDevice(self.device_path)
