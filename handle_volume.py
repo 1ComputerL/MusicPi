@@ -45,7 +45,7 @@ log.info("VolHandler: VolHandler started; initiated things;;")
 
 ### CONNECT TO PICO ###
 # fetch the serial port that the pico is connected to
-with open('settings.json', 'r') as file:
+with open(parentdir+'/settings.json', 'r') as file:
     data = json.load(file)
 
 picoPort = data["picoPort"]

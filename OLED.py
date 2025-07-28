@@ -27,7 +27,7 @@ from waveshare_OLED import OLED_0in91
 # create new logger
 log = logging.getLogger('my_logger')
 # configure the logger
-logging.basicConfig(filename='musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename=parentdir+'/musicpilog.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # OLED class
 class OLED:

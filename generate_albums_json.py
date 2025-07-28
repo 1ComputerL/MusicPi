@@ -103,7 +103,7 @@ def build_folder_structure(path):
 ### MAIN CODE SECTION ###
 # load media directory from settings
 if __name__ == "__main__":
-    with open('settings.json', 'r') as file:
+    with open(parentdir+'/settings.json', 'r') as file:
         data = json.load(file)
     root_dir = data["mediaDir"]
     tree = build_folder_structure(root_dir)
