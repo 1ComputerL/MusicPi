@@ -7,9 +7,12 @@ And here's the Github repo!
 
 MusicPi is a modular, extensible, and hackable music/media Python system programmed in python for Raspberry Pi, designed for physical controls, OLED display, and integration with custom hardware (like Pico microcontrollers). It’s perfect for building your own jukebox, media center, or interactive music player! The system uses different programs to support easy setup and bug tracking.
 
+I encourage you to edit the code to suit your needs. Further explanation is provided here, in the instructable.ds
+
 ---
 
 ## Features
+MusicPi incorporates many features to make for the best user experience, simple interaction with an OLED display six buttons, and a potentiometer.
 
 - **Physical Controls:** Use buttons, rotary encoders, and potentiometers for playback, navigation, and volume/tone control.
 - **OLED Display:** Real-time menu, notifications, and playback info on an OLED screen.
@@ -22,6 +25,7 @@ MusicPi is a modular, extensible, and hackable music/media Python system program
 ---
 
 ## Programs Structure
+These small descriptions only provide an overview of the actual things the programs do and how they do them. To get a real feel for it, look at the code.
 
 ```
 background.py           # Manages system state, power, and screen
@@ -40,6 +44,7 @@ Pico/                   # Microcontroller code and examples
 ## Setup & Installation
 
 ### 1. Dependencies
+The free programs listed below are all necessary unless you edit the MusicPi system.
 
 - [Python](https://docs.python.org/3/) for running the programs
 - [MPV](https://mpv.io/) for playing media
@@ -56,15 +61,34 @@ sudo apt-get install python3-pip python3-pil python3-numpy mpv socat
 sudo pip3 install mutagen evdev gpiozero Pillow
 ```
 
+### 2. Parts Suggestions
+These are the parts I used, the bare minimum needed to run the MusicPi system. The full guide to replicating my build is detailed on the instructable linked to above. Any deviation from them will require reprogramming and optimization of the MusicPi code for your hardware (extra fun I think).
+- Raspberry Pi 4 (any should work though)
+- Raspberry Pi Pico (again, any should work, but I would suggest the Pico H as it's slightly less expensive then the other variants and comes with pre-soldered headers)
+- Waveshare General 0.91" OLED Display Module
+- USB Data Cable
+- Breadboard
+- Breadboard Jumper Wires
+- Push buttons
 ### 2. Hardware Connections
+Place the pico to the breadboard.
+Connect the buttons to the GPIO pins as detailed in the MusicPi/Pico/main.py program, or switch things up and customize the code to register your different button connections.
+Connect the OLED module to the Raspberry Pi as shown below (the MusicPi system does not use the originial waveshare OLED library so connect the wires my way or it won't work)
+Plug the USB data cable into the Pico on one end and a computer on the other.
+- 
 
-- **Nothing:**
-
-### 3. Configuration
-
-- Place your music in `/home/me/Music` or 
-- Edit device paths in the various programs if needed.
-- Reprogram bits and pieces to work with alternate hardware
+### 3. Software Setup
+- Install the dependencies with the following commands:
+```sh
+sudo apt-get update
+sudo apt-get install python3-pip python3-pil python3-numpy mpv socat
+sudo pip3 install mutagen evdev gpiozero Pillow
+```
+- Download the MusicPi folder into the root of a prepared Raspberry Pi OS computer
+- Flash the Pico with the latest Circuit Python UF2 (https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython), and then copy the main.py program over to the Pico's root folder.
+- Setup MusicPi/background.py to run on boot of the Raspberry Pi (you can use Botspot's Autostar https://github.com/Botspot/autostar)
+- Fill ~/Music with media and music for the system
+- Reboot
 
 ---
 
