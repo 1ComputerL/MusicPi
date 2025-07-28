@@ -52,7 +52,13 @@ The free programs listed below are all necessary unless you edit the MusicPi sys
 - [Pillow](https://python-pillow.org/) for image handling
 - [Mutagen](https://mutagen.readthedocs.io/) for MP3 metadata
 - [evdev](https://python-evdev.readthedocs.io/) for input device handling
-- [Waveshare OLED Python Library](OLED/lib/waveshare_OLED/) for control of the OLED display
+- [Waveshare OLED Python Library](https://www.waveshare.com/wiki/0.91inch_OLED_Module) for control of the OLED display
+
+Here are some helpful references
+
+- [MPV JSON IPC](https://mpv.io/manual/master/#json-ipc)
+- [CircuitPython HID](https://circuitpython.readthedocs.io/en/latest/shared-bindings/adafruit_hid/)
+- [gpiozero](https://gpiozero.readthedocs.io/)
 
 Install dependencies:
 ```sh
@@ -70,6 +76,8 @@ These are the parts I used, the bare minimum needed to run the MusicPi system. T
 - Breadboard
 - Breadboard Jumper Wires
 - Push buttons
+-
+
 ### 2. Hardware Connections
 Place the pico to the breadboard.
 Connect the buttons to the GPIO pins as detailed in the MusicPi/Pico/main.py program, or switch things up and customize the code to register your different button connections.
@@ -89,24 +97,6 @@ sudo pip3 install mutagen evdev gpiozero Pillow
 - Setup MusicPi/background.py to run on boot of the Raspberry Pi (you can use Botspot's Autostar https://github.com/Botspot/autostar)
 - Fill ~/Music with media and music for the system
 - Reboot
-
----
-
-## Running MusicPi
-
-1. **Start the background manager:**
-   ```sh
-   python3 background.py
-   ```
-   This will handle power and screen state, and launch the main system.
-
-2. **Main system logic:**
-   - [`music_system.py`](music_system.py) is launched by the background manager.
-   - OLED displays menus and playback info.
-   - Key events from Pico or keyboard control navigation and playback.
-
-3. **Volume Control:**
-   - [`handle_volume.py`](handle_volume.py) listens for serial data from Pico and adjusts system volume.
 
 ---
 
@@ -130,7 +120,7 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 ## OLED Display
 
 - Menus, notifications, and playback info are shown using [`OLED.py`](OLED.py).
-- Customizable via Pillow fonts and images.
+- Customizable with Pillow fonts and images.
 - Example usage in [OLED/example/waveshare_example.py](OLED/example/waveshare_example.py).
 
 ---
@@ -139,16 +129,6 @@ See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 Please feel free to suggest and push improvements to the repo. Here are a few things that could be added:
 - Add new menu actions in [`generate_albums_json.py`](generate_albums_json.py).
 - Add a web socket program to host a website and push keypresses inside the system based on buttons pressed on the website.
-
----
-
-
-## References
-
-- [Waveshare OLED Documentation](OLED/readme_EN.txt)
-- [MPV JSON IPC](https://mpv.io/manual/master/#json-ipc)
-- [CircuitPython HID](https://circuitpython.readthedocs.io/en/latest/shared-bindings/adafruit_hid/)
-- [gpiozero](https://gpiozero.readthedocs.io/)
 
 ---
 
