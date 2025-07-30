@@ -147,4 +147,6 @@ Please feel free to suggest and push improvements to the repo. Here are a few th
 ---
 
 ## License
-?
+
+This project is licensed under the [MIT License](./LICENSE).  
+© 2025 ComputerL (@1ComputerL). See the LICENSE file for details.

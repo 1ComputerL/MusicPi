@@ -1,3 +1,6 @@
+# Copyright (c) 2025 ComputerL (@1ComputerL)
+# Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
 # This program is the starting point of the MusicPi system
 # It should be run at startup
 # It runs in the background and listens for a specific key press to start the music_system.py program

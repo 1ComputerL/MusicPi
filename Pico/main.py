@@ -1,4 +1,11 @@
-# intended for use with Raspberry Pi Pico
+# Copyright (c) 2025 ComputerL (@1ComputerL)
+# Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
+# Intended for use with Raspberry Pi Pico
+# This program listens for button presses from buttons connected to GPIO pins and relays those presses as keypresses to a host device
+# It also reads potentiometer values and prints them in a specific format that can be used by the host device to control volume
+# Created by ComputerL
+
 ### IMPORTS ###
 import time
 import board

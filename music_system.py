@@ -1,3 +1,6 @@
+# Copyright (c) 2025 ComputerL (@1ComputerL)
+# Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
 # This is the main part of the MusicPi system
 # It displays a media menu based on the folder detailed in the menus.json file
 # It displays everything on the OLED display using the OLED.py module

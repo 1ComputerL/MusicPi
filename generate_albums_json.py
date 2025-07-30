@@ -1,3 +1,6 @@
+# Copyright (c) 2025 ComputerL (@1ComputerL)
+# Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
 # This program navigates to a media directory and generates a JSON structure of the directory readable by music_system.py to play the media files provided
 # It is run by music_system.py
 # Created by AI with instructions and code from ComputerL

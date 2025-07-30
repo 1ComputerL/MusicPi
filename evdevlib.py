@@ -1,3 +1,6 @@
+# Copyright (c) 2025 ComputerL (@1ComputerL)
+# Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
 # This module is a better version of pynput that can be used in much the same way and incorporates evdev to listen for key events from a specific device
 # It is used by both background.py and music_system.py
 # Created by AI with instructions and code from ComputerL

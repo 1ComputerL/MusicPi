@@ -1,3 +1,6 @@
+# Copyright (c) 2025 ComputerL (@1ComputerL)
+# Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
 # This module provides a music player class that can play, stop, pause, fetch current playing song info, and control media playback using mpv and its IPC interface
 # It is used by music_system.py
 # Created by AI with instructions and code from ComputerL

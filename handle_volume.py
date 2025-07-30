@@ -1,3 +1,6 @@
+# Copyright (c) 2025 ComputerL (@1ComputerL)
+# Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
 # This program connects to a Raspberry Pi Pico via serial port and receives volume control commands
 # It then adjusts the system volume based on the received commands
 # The pico sends these volume control commands based on the position of a potetentiometer connected to it

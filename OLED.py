@@ -1,3 +1,6 @@
+# Copyright (c) 2025 ComputerL (@1ComputerL)
+# Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
 # This program is used to control the OLED display of the MusicPi system
 # It provides functions to display notifications, menus, and power status
 # It scales text to fit the display and handles different font sizes
