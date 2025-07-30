@@ -193,6 +193,26 @@ Please feel free to suggest and push improvements to the repo. Here are a few th
 - Add new menu actions in [`generate_albums_json.py`](generate_albums_json.py).
 - Add a web socket program to host a website and push keypresses inside the system based on buttons pressed on the website.
 
+## Debugging
+
+If something isn’t working as expected, don’t worry — most issues are easy to track down. Start by checking log output (musicpilog.log) and using the tips below. You can always post an issue to the repo if the below doesn't help.
+
+### 1. Startup Timing
+
+- `background.py` runs at system startup, but it’s best to **wait a few seconds after the desktop GUI finishes loading** before interacting with the device.
+- Pressing the **system program toggle (F9)** too early may prevent the system from initializing correctly.
+- If nothing happens or the display remains blank, try **rebooting the Raspberry Pi** and waiting a moment before pressing any controls.
+
+### 2. Menu or JSON Issues
+
+- If `music_system.py` crashes, menus are missing, or playback options don’t appear, try deleting the `menus.json` file.
+- Then regenerate it by running `generate_albums_json.py` again.
+
+### 3. General Troubleshooting
+
+- Make sure your media files are placed correctly in the directory specified in `settings.json`.
+- Verify that your Pico is detected (check system device list or `/dev/ttyACM*`) and that the correct `eventDevice` is set.
+
 ## Credits
 
 - ComputerL
