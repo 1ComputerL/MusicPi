@@ -9,8 +9,6 @@ MusicPi is a modular, extensible, and hackable music/media Python system program
 
 I encourage you to edit the code to suit your needs. Further explanation is provided here, in the instructable.
 
----
-
 ## Features
 MusicPi incorporates many features to make for the best user experience, simple interaction with an OLED display six buttons, and a potentiometer.
 
@@ -21,8 +19,6 @@ MusicPi incorporates many features to make for the best user experience, simple 
 - **Pico Microcontroller Support:** CircuitPython/MicroPython code for sending keypresses and analog data to the Pi.
 - **Logging:** All actions and errors are logged for easy debugging.
 - **Modular Design:** Easy to extend with new controls, displays, or features.
-
----
 
 ## Programs Structure
 These small descriptions only provide an overview of the actual things the programs do and how they do them. To get a real feel for it, look at the code.
@@ -38,8 +34,6 @@ OLED.py                 # OLED display library
 OLED/                   # OLED library, examples, and assets
 Pico/                   # Microcontroller code and examples
 ```
-
----
 
 ## Setup & Installation
 
@@ -67,8 +61,6 @@ sudo apt-get install python3-pip python3-pil python3-numpy mpv socat
 sudo pip3 install mutagen evdev gpiozero Pillow
 ```
 
----
-
 ### 2. Parts Suggestions
 These are the parts I used, the bare minimum needed to run the MusicPi system. The full guide to replicating my build is detailed on the instructable linked to above. Any deviation from them will require reprogramming and optimization of the MusicPi code for your hardware (extra fun I think).
 - Raspberry Pi 4 (any should work though)
@@ -79,15 +71,11 @@ These are the parts I used, the bare minimum needed to run the MusicPi system. T
 - Breadboard Jumper Wires
 - Push buttons
 
----
-
 ### 3. Hardware Connections
 Place the pico to the breadboard.
 Connect the buttons to the GPIO pins as detailed in the MusicPi/Pico/main.py program, or switch things up and customize the code to register your different button connections.
 Connect the Waveshare General 0.91" OLED Display Module to the Raspberry Pi as shown below (the MusicPi system does not use the originial waveshare OLED library so connect the wires my way or it won't work.)
 Plug the USB data cable into the Pico on one end and a computer on the other.
-
---- 
 
 ### 4. Software Setup
 - Install the dependencies with the following commands:
@@ -102,15 +90,11 @@ sudo pip3 install mutagen evdev gpiozero Pillow
 - Fill ~/Music with media and music for the system
 - Reboot
 
----
-
 ### 5. Using Different Hardware and Techniques
 - OLED
 You can swap out the OLED I used for basically any other one out there. All you have to do is pop the new OLED's library into the MusicPi folder, replace the OLED lib calls in OLED.py with some that will properly talk to your OLED lib, and connect your OLED to the pi as specified in its documentation.
 - Pico
 There is a lot of opportunity for customization with how the MusicPi system takes input from users. You could replace the pico with a website hosting program that could give keypresses and volume commands to the system in the same fashion the pico currently can. You'd have to tell evdevlib.py to listen for keypresses from a specific program and handle_volume.py to accept volume commands through some sort of connection to the same program.
-
----
 
 ## Using MusicPi
 
@@ -129,22 +113,16 @@ These are the keypresses that music_system.py responds to. See [Pico/keys_used.t
 | Power       | F9       | Toggle system prog on/off |
 | BCD         | F12      | Toggle screen             |
 
----
-
 ### 2. OLED Display
 
 - Menus, notifications, and playback info are shown using [`OLED.py`](OLED.py).
 - Customizable with Pillow fonts and images.
 - Example usage in [OLED/example/waveshare_example.py](OLED/example/waveshare_example.py).
 
----
-
 ## Extending MusicPi
 Please feel free to suggest and push improvements to the repo. Here are a few things that could be added:
 - Add new menu actions in [`generate_albums_json.py`](generate_albums_json.py).
 - Add a web socket program to host a website and push keypresses inside the system based on buttons pressed on the website.
-
----
 
 ## Credits
 
@@ -155,8 +133,6 @@ Please feel free to suggest and push improvements to the repo. Here are a few th
 - VS Code
 - ChatGPT
 - Github Copilot helped mainly with evdevlib.py, generate_albums_json.py, and documentation
-
----
 
 ## License
 
