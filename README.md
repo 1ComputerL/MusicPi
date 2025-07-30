@@ -25,7 +25,7 @@ These small descriptions only provide an overview of the actual things the progr
 
 ```
 background.py           # Manages system state, power, and screen
-evdevlib.py             # Makes using evdev easier to help with listening for key events from input devices
+evdevlib.py             # Helps with listening for key events from input devices
 generate_albums_json.py # Scans music folders and generates menu JSON for music_system.py
 handle_volume.py        # Handles volume commands via serial and adjust volume accordingly
 music_player.py         # MPV-based playback control
@@ -119,7 +119,76 @@ These are the keypresses that music_system.py responds to. See [Pico/keys_used.t
 - Customizable with Pillow fonts and images.
 - Example usage in [OLED/example/waveshare_example.py](OLED/example/waveshare_example.py).
 
+### 3. Changing Settings
+
+The `settings.json` file, located in the MusicPi root directory, allows you to customize a few key settings:
+
+- **mediaDir**: Specifies the directory where MusicPi will look for your media files.
+- **picoPort**: The system port corresponding to your Raspberry Pi Pico device.
+- **eventDevice**: The event device file associated with your Pico for input events.
+
+#### How to find your Pico port and event device
+
+To locate the correct `picoPort` and `eventDevice` on your computer:
+
+1. Connect your Raspberry Pi Pico.
+2. Open [Thonny IDE](https://thonny.org/).
+3. In Thonny, check the interpreter options; it should display your Pico and its associated port (e.g., `/dev/ttyACM0`).
+4. For the `eventDevice`, check the `/dev/input/` directory for event devices created by the Pico (e.g., `/dev/input/event4`).
+
+#### Example `settings.json`:
+
+```json
+{
+  "mediaDir": "/home/me/Music",
+  "picoPort": "/dev/ttyACM0",
+  "eventDevice": "/dev/input/event4"
+}
+```
+
+### 4. Adding Media
+
+You can add nearly any type of media to the media folder for the MusicPi system to play.
+
+#### Supported Media Types
+
+- **Audio and video files** supported by [MPV](https://mpv.io/).
+- **.m3u playlist files** for streaming content (e.g., YouTube URLs).
+
+#### Using .m3u Files for Streaming
+
+To stream media from online sources:
+
+1. Create a text file with a `.m3u` extension.
+2. Paste the direct media link (e.g., a YouTube URL) into the file.
+3. Place the `.m3u` file in your media directory.
+
+MPV will handle the streaming and playback seamlessly.
+
+#### Folder and File Ordering
+
+MusicPi supports ordered folder structures. You can name your folders and files with numeric prefixes to control the display and playback order.
+
+For example:
+
+```bash
+/media
+├── 01. Folder One
+│   ├── 01. Song A.mp3
+│   └── 02. Song B.mp3
+├── 02. Folder Two
+└── 03. MyPlaylist.m3u
+```
+
+These numeric prefixes determine the playback order. MusicPi will strip the numbers when displaying names on the OLED screen, showing clean, user-friendly titles like:
+
+- Folder One  
+- Folder Two  
+- MyPlaylist
+
+
 ## Extending MusicPi
+
 Please feel free to suggest and push improvements to the repo. Here are a few things that could be added:
 - Add new menu actions in [`generate_albums_json.py`](generate_albums_json.py).
 - Add a web socket program to host a website and push keypresses inside the system based on buttons pressed on the website.
