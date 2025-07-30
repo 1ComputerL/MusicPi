@@ -67,6 +67,8 @@ sudo apt-get install python3-pip python3-pil python3-numpy mpv socat
 sudo pip3 install mutagen evdev gpiozero Pillow
 ```
 
+---
+
 ### 2. Parts Suggestions
 These are the parts I used, the bare minimum needed to run the MusicPi system. The full guide to replicating my build is detailed on the instructable linked to above. Any deviation from them will require reprogramming and optimization of the MusicPi code for your hardware (extra fun I think).
 - Raspberry Pi 4 (any should work though)
