@@ -79,15 +79,15 @@ These are the parts I used, the bare minimum needed to run the MusicPi system. T
 
 ---
 
-### 2. Hardware Connections
+### 3. Hardware Connections
 Place the pico to the breadboard.
 Connect the buttons to the GPIO pins as detailed in the MusicPi/Pico/main.py program, or switch things up and customize the code to register your different button connections.
-Connect the OLED module to the Raspberry Pi as shown below (the MusicPi system does not use the originial waveshare OLED library so connect the wires my way or it won't work.)
+Connect the Waveshare General 0.91" OLED Display Module to the Raspberry Pi as shown below (the MusicPi system does not use the originial waveshare OLED library so connect the wires my way or it won't work.)
 Plug the USB data cable into the Pico on one end and a computer on the other.
 
 --- 
 
-### 3. Software Setup
+### 4. Software Setup
 - Install the dependencies with the following commands:
 ```sh
 sudo apt-get update
@@ -100,26 +100,34 @@ sudo pip3 install mutagen evdev gpiozero Pillow
 - Fill ~/Music with media and music for the system
 - Reboot
 
+### 5. Using Different Hardware and Techniques
+- OLED
+You can swap out the OLED I used for basically any other one out there. All you have to do is pop the new OLED's library into the MusicPi folder, replace the OLED lib calls in OLED.py with some that will properly talk to your OLED lib, and connect your OLED to the pi as specified in its documentation.
+- Pico
+There is a lot of opportunity for customization with how the MusicPi system takes input from users. You could replace the pico with a website hosting program that could give keypresses and volume commands to the system in the same fashion the pico currently can. You'd have to tell evdevlib.py to listen for keypresses from a specific program and handle_volume.py to accept volume commands through some sort of connection to the same program.
+
 ---
 
-## Controls
+## Using MusicPi
+
+### 1. Controls
 
 These are the keypresses that music_system.py responds to. See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
-| Button      | Key Sent | Function                |
-|-------------|----------|-------------------------|
-| Backward    | F1       | Previous track/menu up  |
-| Play/Pause  | F2       | Play/Pause/Enter        |
-| Forward     | F4       | Next track/menu down    |
-| Mode        | F6       | Main menu               |
-| Display     | F7       | Power off               |
-| Stop        | F8       | Stop playback/back      |
-| Power       | F9       | Toggle system power     |
-| BCD         | F12      | Toggle screen           |
+| Button      | Key Sent | Function                  |
+|-------------|----------|---------------------------|
+| Backward    | F1       | Previous track/menu up    |
+| Play/Pause  | F2       | Play/Pause/Enter          |
+| Forward     | F4       | Next track/menu down      |
+| Mode        | F6       | Main menu                 |
+| Display     | F7       | Power off                 |
+| Stop        | F8       | Stop playback/back        |
+| Power       | F9       | Toggle system prog on/off |
+| BCD         | F12      | Toggle screen             |
 
 ---
 
-## OLED Display
+### 2. OLED Display
 
 - Menus, notifications, and playback info are shown using [`OLED.py`](OLED.py).
 - Customizable with Pillow fonts and images.
