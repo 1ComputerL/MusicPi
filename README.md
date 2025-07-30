@@ -102,6 +102,8 @@ sudo pip3 install mutagen evdev gpiozero Pillow
 - Fill ~/Music with media and music for the system
 - Reboot
 
+---
+
 ### 5. Using Different Hardware and Techniques
 - OLED
 You can swap out the OLED I used for basically any other one out there. All you have to do is pop the new OLED's library into the MusicPi folder, replace the OLED lib calls in OLED.py with some that will properly talk to your OLED lib, and connect your OLED to the pi as specified in its documentation.
