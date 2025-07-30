@@ -76,14 +76,16 @@ These are the parts I used, the bare minimum needed to run the MusicPi system. T
 - Breadboard
 - Breadboard Jumper Wires
 - Push buttons
--
+
+---
 
 ### 2. Hardware Connections
 Place the pico to the breadboard.
 Connect the buttons to the GPIO pins as detailed in the MusicPi/Pico/main.py program, or switch things up and customize the code to register your different button connections.
-Connect the OLED module to the Raspberry Pi as shown below (the MusicPi system does not use the originial waveshare OLED library so connect the wires my way or it won't work)
+Connect the OLED module to the Raspberry Pi as shown below (the MusicPi system does not use the originial waveshare OLED library so connect the wires my way or it won't work.)
 Plug the USB data cable into the Pico on one end and a computer on the other.
-- 
+
+--- 
 
 ### 3. Software Setup
 - Install the dependencies with the following commands:
@@ -102,7 +104,7 @@ sudo pip3 install mutagen evdev gpiozero Pillow
 
 ## Controls
 
-See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
+These are the keypresses that music_system.py responds to. See [Pico/keys_used.txt](Pico/keys_used.txt) for key mappings:
 
 | Button      | Key Sent | Function                |
 |-------------|----------|-------------------------|
