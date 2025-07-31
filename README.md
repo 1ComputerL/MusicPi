@@ -53,14 +53,7 @@ Here are some helpful references
 
 - [MPV JSON IPC](https://mpv.io/manual/master/#json-ipc)
 - [CircuitPython HID](https://circuitpython.readthedocs.io/en/latest/shared-bindings/adafruit_hid/)
-- [gpiozero](https://gpiozero.readthedocs.io/)
-
-Install dependencies:
-```sh
-sudo apt-get update
-sudo apt-get install python3-pip python3-pil python3-numpy mpv socat
-sudo pip3 install mutagen evdev gpiozero Pillow
-```
+- [gpiozero](https://gpiozero.readthedocs.io/)```
 
 ### 2. Parts Suggestions
 These are the parts I used, the bare minimum needed to run the MusicPi system. The full guide to replicating my build is detailed on the instructable linked to above. Any deviation from them will require reprogramming and optimization of the MusicPi code for your hardware (extra fun I think).
