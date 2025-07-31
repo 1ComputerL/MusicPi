@@ -1,5 +1,4 @@
 # MusicPi
-![MusicPi System in action](./images/IMG_4658.jpg)
 
 What if you wanted to create a media player? Something portable, maybe even housed in an old boombox. And you decide to go completely crazy and gut out somebody’s dead Sony CFD-V15, replace all the parts but the speakers, and design all the software yourself. Maybe you feel that with Raspberry Pi, an audio DAC, some wrecking tools, and a lot of programming, you can make it work. But how?
 
