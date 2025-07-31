@@ -48,7 +48,7 @@ class Player:
 
 # start the mpv process with the IPC server
         self.process = subprocess.Popen(
-            ['mpv', '--no-terminal', '--input-ipc-server=' + self.ipc_socket, what],
+            ['mpv', '--no-terminal', '--fullscreen', '--input-ipc-server=' + self.ipc_socket, what],
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL
         )

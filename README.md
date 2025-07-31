@@ -5,7 +5,7 @@ That’s the challenge I gave myself, the one I worked hard on and still help to
 
 And here's the Github repo!
 
-MusicPi is a modular, extensible, and hackable music/media Python system programmed in python for Raspberry Pi, designed for physical controls, OLED display, and integration with custom hardware (like Pico microcontrollers). It’s perfect for building your own jukebox, media center, or interactive music player! The system uses different programs to support easy setup and bug tracking.
+MusicPi is a modular, extensible, and hackable music/media Python system for Raspberry Pi, designed for physical controls, OLED display, and integration with custom hardware (like Pico microcontrollers). It’s perfect for building your own jukebox, media center, or interactive music player! The system uses different programs to support easy setup and bug tracking.
 
 I encourage you to edit the code to suit your needs. Further explanation is provided here, in the instructable.
 
@@ -191,7 +191,7 @@ These numeric prefixes determine the playback order. MusicPi will strip the numb
 
 Please feel free to suggest and push improvements to the repo. Here are a few things that could be added:
 - Add new menu actions in [`generate_albums_json.py`](generate_albums_json.py).
-- Add a web socket program to host a website and push keypresses inside the system based on buttons pressed on the website.
+- Add a web socket program to host a website and push keypresses inside the system based on buttons pressed on the website
 
 ## Debugging
 
