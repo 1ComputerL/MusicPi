@@ -75,8 +75,7 @@ Plug the USB data cable into the Pico on one end and a computer on the other.
 - Install the dependencies with the following commands:
 ```sh
 sudo apt-get update
-sudo apt-get install python3-pip python3-pil python3-numpy mpv socat
-sudo pip3 install mutagen evdev gpiozero Pillow
+sudo apt-get install python3-pip python3-pil python3-numpy mpv socat python3-mutagen python3-evdev python3-gpiozero python3-pil
 ```
 - Download the MusicPi folder into the root of a prepared Raspberry Pi OS computer
 - Flash the Pico with the latest Circuit Python UF2 (https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython), and then copy the main.py program over to the Pico's root folder.
