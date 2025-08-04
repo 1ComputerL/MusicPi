@@ -4,8 +4,6 @@ What if you wanted to create a music player? Something portable, maybe even hous
 
 That's the challenge I gave myself, the one I worked hard on and still help to improve. MusicPi, a Linux and Python based system powered by a Raspberry Pi 4 and Pico! Running on programs designed for ease of use. An amazing, open source alternative to popular platforms with their distractions.
 
-And here's the Github repo!
-
 MusicPi is a modular, extensible, and hackable music/media Python system for Raspberry Pi, designed for physical controls, OLED display, and integration with custom hardware (like Pico microcontrollers). It’s perfect for building your own jukebox, media center, or interactive music player! The system uses different programs to support easy setup and bug tracking.
 
 I encourage you to edit the code to suit your needs. Further explanation is provided here, in the instructable.
