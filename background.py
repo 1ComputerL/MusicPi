@@ -4,7 +4,7 @@
 # This program is the starting point of the MusicPi system
 # It should be run at startup
 # It runs in the background and listens for a specific key press to start the music_system.py program
-# Also, it starts a program to turn the screen on and off based on other specific key presses
+# Also, it starts a program to turn output 'DSI-1' on and off based on other specific key presses
 # Created by ComputerL
 
 ### IMPORTS ###
