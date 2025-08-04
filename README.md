@@ -2,7 +2,7 @@
 
 What if you wanted to create a music player? Something portable, maybe even housed in an old boombox. And you decide to go completely crazy and gut out somebody’s dead Sony CFD-V15, replace all the parts but the speakers, and design all the software yourself. Maybe you feel that with Raspberry Pi, an audio DAC, some wrecking tools, and a lot of programming, you can make it work. But how?
 
-That is the challenge I gave myself, the one I worked hard on and still help to improve. MusicPi, a Linux and Python based system powered by a Raspberry Pi 4 and Pico! Running on programs designed for ease of use. An amazing, open source alternative to popular platforms with their distractions.
+That's the challenge I gave myself, the one I worked hard on and still help to improve. MusicPi, a Linux and Python based system powered by a Raspberry Pi 4 and Pico! Running on programs designed for ease of use. An amazing, open source alternative to popular platforms with their distractions.
 
 And here's the Github repo!
 
