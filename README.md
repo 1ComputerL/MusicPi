@@ -1,7 +1,7 @@
 # MusicPi
 
 <p align="center">
-  <img src="https://github.com/1ComputerL/MusicPi/blob/main/assets/icon.JPG" alt="MusicPi Banner" width="48%">
+  <img src="https://github.com/1ComputerL/MusicPi/blob/main/assets/icon.png" alt="MusicPi Banner" width="48%">
   <a href="https://youtu.be/st0GN5Wyn0o">
     <img src="https://img.youtube.com/vi/st0GN5Wyn0o/hqdefault.jpg" alt="Demo Video" width="48%">
   </a>
