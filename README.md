@@ -9,7 +9,7 @@
 
 MusicPi is a modular, extensible, and hackable music/media Python system for Raspberry Pi, designed for physical controls, OLED display, and integration with custom hardware (like Pico microcontrollers). It’s perfect for building your own jukebox, media center, or interactive music player! The system uses different programs to support easy setup and bug tracking.
 
-I encourage you to edit the code to suit your needs. Further explanation is provided here, in the [https://www.instructables.com/Custom-Raspberry-Pi-Music-Player-Powered-by-Raspbe/](url)
+I encourage you to edit the code to suit your needs. Further explanation is provided here, in the [MusicPi Instructable](https://www.instructables.com/Custom-Raspberry-Pi-Music-Player-Powered-by-Raspbe/).
 
 ## Features
 MusicPi incorporates many features to make for the best user experience, simple interaction with an OLED display six buttons, and a potentiometer.
