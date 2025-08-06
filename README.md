@@ -1,6 +1,11 @@
 # MusicPi
 
-![Project Banner](https://github.com/1ComputerL/MusicPi/blob/main/assets/icon.JPG)
+<p align="center">
+  <img src="https://github.com/1ComputerL/MusicPi/blob/main/assets/icon.JPG" alt="MusicPi Banner" width="48%">
+  <a href="https://youtu.be/st0GN5Wyn0o">
+    <img src="https://img.youtube.com/vi/st0GN5Wyn0o/hqdefault.jpg" alt="Demo Video" width="48%">
+  </a>
+</p>
 
 What if you wanted to create a music player? Something portable, maybe even housed in an old boombox. And you decide to go completely crazy and gut out somebody’s dead Sony CFD-V15, replace all the parts but the speakers, and design all the software yourself. Maybe you feel that with Raspberry Pi, an audio DAC, some wrecking tools, and a lot of programming, you can make it work. But how?
 
