@@ -42,7 +42,7 @@ class Player:
 # if the process is already running and not terminated
         if self.process and self.process.poll() is None:
 # kill all mpv processes
-        os.system("killall mpv")
+            os.system("killall mpv")
 # stop any existing mpv process
             self.stop()
 
