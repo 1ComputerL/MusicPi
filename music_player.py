@@ -34,8 +34,6 @@ class Player:
         self.ipc_socket = "/tmp/mpvsocket"  # Define the IPC socket path
 # define the process variable
         self.process = None  # To store the mpv process
-# kill all mpv processes
-        os.system("killall mpv")
 # logging
         log.info("Player: initialized;")
 
@@ -43,6 +41,8 @@ class Player:
     def play(self, what):
 # if the process is already running and not terminated
         if self.process and self.process.poll() is None:
+# kill all mpv processes
+        os.system("killall mpv")
 # stop any existing mpv process
             self.stop()
 
